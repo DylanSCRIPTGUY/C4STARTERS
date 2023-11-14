@@ -16,13 +16,48 @@
   <body>
 
     <img src="C4STARTERS.png" alt="c4starters logo">
+    <h1>THE SYNTAX OF C:</h1>
+    <p>C's syntax is straightforward.
+      For functions, they begin with the function name followed by parentheses.
+      If there are any parameters, they are specified within these parentheses.
+      The function block concludes with a semicolon.
+      <br>
+      For conditionals, the structure starts with the conditional statement,
+      followed by parentheses containing parameters if applicable. The block of code associated with the conditional is enclosed in curly brackets.
+      <br>
+      And finally, statements in C start with the statement, and (if there are any), the paremeters will be put after (NOT IN PARENTHESIS) and a semicolon at the end.
+    </p>
+    <p>Function:</p>
+    <p style="color:blue;">afunction(parameters);</p>
+    <p>Conditional:</p>
+    <p style="color:blue;">if(1 == 1) {<br>    return 1;<br>}</p>
+    <p>Statement:</p>
+    <p style="color:blue;">return 0;</p>
     <h1>COMMENTS:</h1>
     <p>The first thing that I am going to do is display a comment. A comment is ignored by the compiler
       and is essentially an area for notes. you can make a comment by typing "//" and then your text.
     </p>
     <p style="color:blue;">// This is a comment. It is ignored by the compiler. You can write notes here</p>
+
+    <h1>PRINTING TEXT:</h1>
+    <p>Printing text is very simple. To print text, use the "printf()" function</p>
+    <p style="color:blue;">printf("this is the text!\n")</p>
+    <p>notice that at the end I added "\n" to it. This prints a new line. This is essential
+      to prevent visual bugs. Although there are some scenarios where you can avoid it.</p>
+
     <h1>STARTING AND ENDING A PROGRAM:</h1>
+    <p>To start and end a program, you use "int main()" and "return 0;"</p>
+    <p>This program prints hello world and then closes:</p>
+    <script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2FDylanSCRIPTGUY%2FC4STARTERS%2Fblob%2Fmain%2Fprintf.c&style=a11y-light&type=code"></script>
 
-
+    <h1>Compiling & running code:</h1>
+    <p>Now, lets try and test the following hello world code that we made. But how do we run it? We use compilers.
+      They get our code and turn it into an executable. There are many options, but I will use gcc as it is very easy
+      to use. to test your code, open your terminal. From there, locate the folder that you put your code into.
+      After that, type this into your terminal:</p>
+    <br>
+    <p style="color:blue;">gcc -o nameofyourprogram nameofthecfile.c</p>
+    <p>after this, you should be left with an executable. And if you run it, it should print "hello world"</p>
+    <p>(If you want to automate this process. Use Makefiles. But I will not be making a tutorial for Makefiles)</p>
   </body>
 </html> 
